@@ -25,13 +25,13 @@ h1 {
     transform: rotate(360deg);
 } */
 
-.links {
+.links-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.links a {
+.links-container a {
     text-decoration: none;
     color: #1269c7;
     margin: 10px 0;
@@ -40,8 +40,12 @@ h1 {
     transition: font-size 1s linear;
 }
 
-.links a:hover {
+.links-container a:hover {
     font-size: 1.3em;
+}
+
+.link-card {
+    padding: 8px;
 }
 
 footer {
