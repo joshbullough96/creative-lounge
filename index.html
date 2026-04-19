@@ -1,31 +1,124 @@
 <!doctype html>
-
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Creative Lounge</title>
-
-        <!-- Load external CSS styles -->
         <link rel="stylesheet" href="styles.css">
-
     </head>
+    <body class="page-home">
+        <main class="page-shell">
+            <section class="hero">
+                <p class="eyebrow">Projects</p>
+                <h1>Creative Lounge</h1>
+                <p class="hero-copy">
+                    A home page for the games, experiments, church tools, and practical apps
+                    I've built over the years.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="projects.html">Browse all projects</a>
+                    <a class="button button-secondary" href="#collections">Jump to collections</a>
+                </div>
+            </section>
 
-    <body>
-        <h1>Welcome</h1>
-        <div class="links-container">
-            <div class="link-card"><a href="/talk-finder/" target="_blank">Lds Talk Finder</a></div>
-            <div class="link-card"><a href="/emoji-elevator-game/" target="_blank">Emoji Elevator Game</a></div>
-            <div class="link-card"><a href="/word-search/" target="_blank">Word Search</a></div>
-            <div class="link-card"><a href="/church-trivia-game/" target="_blank">Restoration Trivia Game</a></div>
-            <div class="link-card"><a href="/farkle/" target="_blank">Farkle</a></div>
-            <div class="link-card"><a href="/speech-pathology-app/" target="_blank">Speech Pathology Word Generator</a></div>
-            <div class="link-card"><a href="/tap-to-find/" target="_blank">Tap To Find Game</a></div>
-        </div>
-        <footer>
-            © Made by Josh Bullough. All rights reserved.
+            <section class="category-strip" aria-label="Collections overview">
+                <div class="category-pill">Featured</div>
+                <div class="category-pill">Just For Fun</div>
+                <div class="category-pill">Church</div>
+                <div class="category-pill">Useful Tools</div>
+            </section>
+
+            <section class="collection-grid" id="collections">
+                <article class="collection-card">
+                    <div class="section-heading">
+                        <p class="section-kicker">Featured</p>
+                        <h2>Start here</h2>
+                    </div>
+                    <div class="project-list">
+                        <a class="project-card project-card-featured" href="/talk-finder/" target="_blank" rel="noreferrer">
+                            <span class="project-title">Lds Talk Finder</span>
+                            <span class="project-meta">Church &bull; Reference</span>
+                        </a>
+                        <a class="project-card project-card-featured" href="/speech-pathology-app/" target="_blank" rel="noreferrer">
+                            <span class="project-title">Speech Pathology Word Generator</span>
+                            <span class="project-meta">Useful Tool &bull; Work</span>
+                        </a>
+                        <a class="project-card project-card-featured" href="/church-trivia-game/" target="_blank" rel="noreferrer">
+                            <span class="project-title">Restoration Trivia Game</span>
+                            <span class="project-meta">Church &bull; Just For Fun</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="collection-card">
+                    <div class="section-heading">
+                        <p class="section-kicker">Just For Fun</p>
+                        <h2>Playful builds</h2>
+                    </div>
+                    <div class="project-list">
+                        <a class="project-card" href="/emoji-elevator-game/" target="_blank" rel="noreferrer">
+                            <span class="project-title">Emoji Elevator Game</span>
+                            <span class="project-meta">Game &bull; Experiment</span>
+                        </a>
+                        <a class="project-card" href="/farkle/" target="_blank" rel="noreferrer">
+                            <span class="project-title">Farkle</span>
+                            <span class="project-meta">Dice Game</span>
+                        </a>
+                        <a class="project-card" href="/dungeoun-escape/" target="_blank" rel="noreferrer">
+                            <span class="project-title">Dungeoun Escape</span>
+                            <span class="project-meta">Adventure &bull; Game</span>
+                        </a>
+                        <a class="project-card" href="/tap-to-find/" target="_blank" rel="noreferrer">
+                            <span class="project-title">Tap To Find Game</span>
+                            <span class="project-meta">Arcade &bull; Experiment</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="collection-card">
+                    <div class="section-heading">
+                        <p class="section-kicker">Church</p>
+                        <h2>Built for lessons and activities</h2>
+                    </div>
+                    <div class="project-list">
+                        <a class="project-card" href="/talk-finder/" target="_blank" rel="noreferrer">
+                            <span class="project-title">Lds Talk Finder</span>
+                            <span class="project-meta">Talk prep &bull; Reference</span>
+                        </a>
+                        <a class="project-card" href="/word-search/" target="_blank" rel="noreferrer">
+                            <span class="project-title">Lds Word Search</span>
+                            <span class="project-meta">Puzzle &bull; Activity</span>
+                        </a>
+                        <a class="project-card" href="/church-trivia-game/" target="_blank" rel="noreferrer">
+                            <span class="project-title">Restoration Trivia Game</span>
+                            <span class="project-meta">Trivia &bull; Group Play</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="collection-card">
+                    <div class="section-heading">
+                        <p class="section-kicker">Useful Tools</p>
+                        <h2>Practical helpers</h2>
+                    </div>
+                    <div class="project-list">
+                        <a class="project-card" href="/speech-pathology-app/" target="_blank" rel="noreferrer">
+                            <span class="project-title">Speech Pathology Word Generator</span>
+                            <span class="project-meta">Work &bull; Generator</span>
+                        </a>
+                        <a class="project-card" href="/talk-finder/" target="_blank" rel="noreferrer">
+                            <span class="project-title">Lds Talk Finder</span>
+                            <span class="project-meta">Search &bull; Reference</span>
+                        </a>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; Made by Josh Bullough.</p>
         </footer>
-        <script src="scripts.js"></script>
-    </body>
 
+        <script src="script.js"></script>
+    </body>
 </html>
