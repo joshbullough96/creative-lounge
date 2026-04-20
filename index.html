@@ -6,112 +6,152 @@
         <title>Creative Lounge</title>
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body class="page-home">
+    <body class="page-projects">
         <main class="page-shell">
-            <section class="hero">
-                <p class="eyebrow">Projects</p>
-                <h1>Creative Lounge</h1>
+            <section class="hero hero-compact">
+                <p class="eyebrow">Project Showcase</p>
+                <h1>Creative Lounge 🛋️</h1>
                 <p class="hero-copy">
-                    A home page for the games, experiments, church tools, and practical apps
-                    I've built over the years.
+                    A showcase of games, experiments, church-related projects, and practical
+                    tools. Use the filters to narrow the collection.
                 </p>
-                <div class="hero-actions">
-                    <a class="button button-primary" href="projects.html">Browse all projects</a>
-                    <a class="button button-secondary" href="#collections">Jump to collections</a>
-                </div>
             </section>
 
-            <section class="category-strip" aria-label="Collections overview">
-                <div class="category-pill">Featured</div>
-                <div class="category-pill">Just For Fun</div>
-                <div class="category-pill">Church</div>
-                <div class="category-pill">Useful Tools</div>
+            
+            <h2>Browse by category.</h2>
+            <section class="filters" aria-label="Project filters">
+                <button class="filter-button is-active" type="button" data-filter="all">All</button>
+                <button class="filter-button" type="button" data-filter="featured">Featured</button>
+                <button class="filter-button" type="button" data-filter="game">Game</button>
+                <button class="filter-button" type="button" data-filter="church">Church</button>
+                <button class="filter-button" type="button" data-filter="tools">Useful Tools</button>
             </section>
 
-            <section class="collection-grid" id="collections">
-                <article class="collection-card">
-                    <div class="section-heading">
-                        <p class="section-kicker">Featured</p>
-                        <h2>Start here</h2>
-                    </div>
-                    <div class="project-list">
-                        <a class="project-card project-card-featured" href="/talk-finder/" target="_blank" rel="noreferrer">
-                            <span class="project-title">Lds Talk Finder</span>
-                            <span class="project-meta">Church &bull; Reference</span>
-                        </a>
-                        <a class="project-card project-card-featured" href="/speech-pathology-app/" target="_blank" rel="noreferrer">
-                            <span class="project-title">Speech Pathology Word Generator</span>
-                            <span class="project-meta">Useful Tool &bull; Work</span>
-                        </a>
-                        <a class="project-card project-card-featured" href="/church-trivia-game/" target="_blank" rel="noreferrer">
-                            <span class="project-title">Restoration Trivia Game</span>
-                            <span class="project-meta">Church &bull; Just For Fun</span>
-                        </a>
-                    </div>
-                </article>
+            <section class="catalog-grid showcase-grid">
+                <a class="catalog-card showcase-card preview-talk" data-tags="featured church tools" href="/talk-finder/" target="_blank" rel="noreferrer">
+                    <span class="showcase-preview">
+                        <span class="preview-label">Inspiring Talks</span>
+                        <span class="preview-mark">📖</span>
+                    </span>
+                    <span class="showcase-body">
+                        <span class="project-title">Talks From The Church of Jesus Christ of Latter-day Saints</span>
+                        <span class="project-description">A tool for finding well-known General Conference and devotional talks.</span>
+                        <span class="project-meta">Search &bull; Reference</span>
+                        <span class="tag-row">
+                            <span class="tag">Featured</span>
+                            <span class="tag">Church</span>
+                            <span class="tag">Useful Tools</span>
+                        </span>
+                    </span>
+                </a>
 
-                <article class="collection-card">
-                    <div class="section-heading">
-                        <p class="section-kicker">Just For Fun</p>
-                        <h2>Playful builds</h2>
-                    </div>
-                    <div class="project-list">
-                        <a class="project-card" href="/emoji-elevator-game/" target="_blank" rel="noreferrer">
-                            <span class="project-title">Emoji Elevator Game</span>
-                            <span class="project-meta">Game &bull; Experiment</span>
-                        </a>
-                        <a class="project-card" href="/farkle/" target="_blank" rel="noreferrer">
-                            <span class="project-title">Farkle</span>
-                            <span class="project-meta">Dice Game</span>
-                        </a>
-                        <a class="project-card" href="/dungeoun-escape/" target="_blank" rel="noreferrer">
-                            <span class="project-title">Dungeoun Escape</span>
-                            <span class="project-meta">Adventure &bull; Game</span>
-                        </a>
-                        <a class="project-card" href="/tap-to-find/" target="_blank" rel="noreferrer">
-                            <span class="project-title">Tap To Find Game</span>
-                            <span class="project-meta">Arcade &bull; Experiment</span>
-                        </a>
-                    </div>
-                </article>
+                <a class="catalog-card showcase-card preview-emoji" data-tags="game" href="/emoji-elevator-game/" target="_blank" rel="noreferrer">
+                    <span class="showcase-preview">
+                        <span class="preview-label">Game</span>
+                        <span class="preview-mark">🤩🛗</span>
+                    </span>
+                    <span class="showcase-body">
+                        <span class="project-title">Emoji Elevator Game</span>
+                        <span class="project-description">A game that rewards quick thinking and a little organization.</span>
+                        <span class="project-meta">Game &bull; Experiment</span>
+                        <span class="tag-row">
+                            <span class="tag">Game</span>
+                        </span>
+                    </span>
+                </a>
 
-                <article class="collection-card">
-                    <div class="section-heading">
-                        <p class="section-kicker">Church</p>
-                        <h2>Built for lessons and activities</h2>
-                    </div>
-                    <div class="project-list">
-                        <a class="project-card" href="/talk-finder/" target="_blank" rel="noreferrer">
-                            <span class="project-title">Lds Talk Finder</span>
-                            <span class="project-meta">Talk prep &bull; Reference</span>
-                        </a>
-                        <a class="project-card" href="/word-search/" target="_blank" rel="noreferrer">
-                            <span class="project-title">Lds Word Search</span>
-                            <span class="project-meta">Puzzle &bull; Activity</span>
-                        </a>
-                        <a class="project-card" href="/church-trivia-game/" target="_blank" rel="noreferrer">
-                            <span class="project-title">Restoration Trivia Game</span>
-                            <span class="project-meta">Trivia &bull; Group Play</span>
-                        </a>
-                    </div>
-                </article>
+                <a class="catalog-card showcase-card preview-wordsearch" data-tags="church" href="/word-search/" target="_blank" rel="noreferrer">
+                    <span class="showcase-preview">
+                        <span class="preview-label">Activity</span>
+                        <span class="preview-mark">🔠🔎</span>
+                    </span>
+                    <span class="showcase-body">
+                        <span class="project-title">Book of Mormon Word Search</span>
+                        <span class="project-description">A church-friendly puzzle activity for classes, families, or group events.</span>
+                        <span class="project-meta">Puzzle &bull; Activity</span>
+                        <span class="tag-row">
+                            <span class="tag">Church</span>
+                        </span>
+                    </span>
+                </a>
 
-                <article class="collection-card">
-                    <div class="section-heading">
-                        <p class="section-kicker">Useful Tools</p>
-                        <h2>Practical helpers</h2>
-                    </div>
-                    <div class="project-list">
-                        <a class="project-card" href="/speech-pathology-app/" target="_blank" rel="noreferrer">
-                            <span class="project-title">Speech Pathology Word Generator</span>
-                            <span class="project-meta">Work &bull; Generator</span>
-                        </a>
-                        <a class="project-card" href="/talk-finder/" target="_blank" rel="noreferrer">
-                            <span class="project-title">Lds Talk Finder</span>
-                            <span class="project-meta">Search &bull; Reference</span>
-                        </a>
-                    </div>
-                </article>
+                <a class="catalog-card showcase-card preview-trivia" data-tags="featured church game" href="/church-trivia-game/" target="_blank" rel="noreferrer">
+                    <span class="showcase-preview">
+                        <span class="preview-label">Trivia Game</span>
+                        <span class="preview-mark">🤔🧠</span>
+                    </span>
+                    <span class="showcase-body">
+                        <span class="project-title">Church History Trivia Game</span>
+                        <span class="project-description">A trivia game made for church settings with a little more energy.</span>
+                        <span class="project-meta">Trivia &bull; Memorization</span>
+                        <span class="tag-row">
+                            <span class="tag">Featured</span>
+                            <span class="tag">Church</span>
+                            <span class="tag">Game</span>
+                        </span>
+                    </span>
+                </a>
+
+                <a class="catalog-card showcase-card preview-farkle" data-tags="game" href="/farkle/" target="_blank" rel="noreferrer">
+                    <span class="showcase-preview">
+                        <span class="preview-label">Dice Game</span>
+                        <span class="preview-mark">🎲🎮</span>
+                    </span>
+                    <span class="showcase-body">
+                        <span class="project-title">Farkle</span>
+                        <span class="project-description">A digital take on the classic dice game of Farkle.</span>
+                        <span class="project-meta">Dice &bull; Luck</span>
+                        <span class="tag-row">
+                            <span class="tag">Game</span>
+                        </span>
+                    </span>
+                </a>
+
+                <a class="catalog-card showcase-card preview-dungeon" data-tags="game" href="/dungeoun-escape/" target="_blank" rel="noreferrer">
+                    <span class="showcase-preview">
+                        <span class="preview-label">Adventure Game</span>
+                        <span class="preview-mark">🧙‍♂️🚪</span>
+                    </span>
+                    <span class="showcase-body">
+                        <span class="project-title">Dungeoun Escape</span>
+                        <span class="project-description">An arcade-style adventure game made for playful exploration and quick sessions.</span>
+                        <span class="project-meta">Adventure &bull; Game</span>
+                        <span class="tag-row">
+                            <span class="tag">Game</span>
+                        </span>
+                    </span>
+                </a>
+
+                <a class="catalog-card showcase-card preview-speech" data-tags="featured tools" href="/speech-pathology-app/" target="_blank" rel="noreferrer">
+                    <span class="showcase-preview">
+                        <span class="preview-label">Generator</span>
+                        <span class="preview-mark">🗣️</span>
+                    </span>
+                    <span class="showcase-body">
+                        <span class="project-title">Speech Pathology Word Generator</span>
+                        <span class="project-description">A practical generator built for real work and repeat use.</span>
+                        <span class="project-meta">Work &bull; Generator</span>
+                        <span class="tag-row">
+                            <span class="tag">Featured</span>
+                            <span class="tag">Useful Tools</span>
+                        </span>
+                    </span>
+                </a>
+
+                <a class="catalog-card showcase-card preview-tap" data-tags="game" href="/tap-to-find/" target="_blank" rel="noreferrer">
+                    <span class="showcase-preview">
+                        <span class="preview-label">Arcade Game</span>
+                        <span class="preview-mark">👈🔍</span>
+                    </span>
+                    <span class="showcase-body">
+                        <span class="project-title">Tap To Find Game</span>
+                        <span class="project-description">A fast, game of tapping on the spots to find the hidden object.</span>
+                        <span class="project-meta">Arcade &bull; Experiment</span>
+                        <span class="tag-row">
+                            <span class="tag">Game</span>
+                        </span>
+                    </span>
+                </a>
             </section>
         </main>
 
